@@ -6,3 +6,87 @@ Stwórz za pomocą WinForms kilka aplikacji wg opisu:
 3. Apka z buttonem, który kliknięty pokazuje komunikat z bieżącą datą i po kliknięciu ok drugi komunikat z bieżącą godziną.
 4. Apka z dwoma textboxami do wpisania dwóch liczb. Po kliknięciu w button na labelu poniżej ma się wyświetlić NWD i NWW liczb z textboxów. Nie rób walidacji, załóż, że user wpisał liczby.
 */
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
+
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.ToLower() == "bye")
+            {
+                Application.Exit(); 
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Data: {DateTime.Now.ToShortDateString()}", "Data");
+            MessageBox.Show($"Godzina: {DateTime.Now.ToShortTimeString()}", "Godzina");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox2.Text);
+            int b = int.Parse(textBox3.Text);
+
+            int gcd = GCD(a, b);
+            int lcm = LCM(a, b);
+
+            label1.Text = $"NWD: {gcd}, NWW: {lcm}";
+
+
+        }
+
+        private int GCD(int a, int b)
+        {
+            while (b != 0)
+            {
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+
+        private int LCM(int a, int b)
+        {
+            return (a / GCD(a, b)) * b;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

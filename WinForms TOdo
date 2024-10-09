@@ -41,7 +41,7 @@ namespace Appka
             int num1 = int.Parse(textBox1.Text);
             int num2 = int.Parse(textBox2.Text);
             bool areFriendly = Czy_zapr(num1, num2);
-            MessageBox.Show($"{num1} ta {num2}: {(areFriendly ? "TAK" : "NIE")}");
+            label1.Text=($" liczba {num1} ta liczba {num2}: {(areFriendly ? "TAK" : "NIE")}");
         }
         private int sumaliczb(int number)
         {

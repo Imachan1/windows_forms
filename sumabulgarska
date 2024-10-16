@@ -1,0 +1,63 @@
+private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (int.TryParse(textBox1.Text, out int num1) && int.TryParse(textBox2.Text, out int num2))
+            {
+                // Проверяем, что введенные числа являются двузначными
+                if (IsTwoDigitNumber(num1) && IsTwoDigitNumber(num2))
+                {
+                    // Скрываем сообщение об ошибке
+                    label1.Text = string.Empty;
+
+                    // Вычисляем сумму болгарскую
+                    int bulgarianSum = BulgarianSum(num1) + BulgarianSum(num2);
+
+                    // Проверяем, является ли сумма простым числом
+                    if (IsPrime(bulgarianSum))
+                    {
+                        MessageBox.Show("Sukces", "Wynik");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Porażka", "Wynik");
+                    }
+                }
+                else
+                {
+                    label1.Text = "Liczby mają być dwucyfrowe";
+                }
+            }
+            else
+            {
+                label1.Text = "Wprowadź poprawne liczby!";
+            }
+        }
+
+        private bool IsTwoDigitNumber(int number)
+        {
+            return number >= 10 && number <= 99;
+        }
+
+        private int BulgarianSum(int number)
+        {
+            int sum = 0;
+            while (number > 0)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
+
+        private bool IsPrime(int number)
+        {
+            if (number <= 1) return false;
+            for (int i = 2; i * i <= number; i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+            return true;
+        }
+    }
+}

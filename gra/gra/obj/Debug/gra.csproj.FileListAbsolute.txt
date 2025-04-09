@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\gra\gra\bin\Debug\gra.exe.config
+C:\Users\3Egr2\source\repos\gra\gra\bin\Debug\gra.exe
+C:\Users\3Egr2\source\repos\gra\gra\bin\Debug\gra.pdb
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.Form1.resources
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.exe
+C:\Users\3Egr2\source\repos\gra\gra\obj\Debug\gra.pdb

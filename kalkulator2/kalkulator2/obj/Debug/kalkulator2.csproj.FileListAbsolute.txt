@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\bin\Debug\kalkulator2.exe.config
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\bin\Debug\kalkulator2.exe
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\bin\Debug\kalkulator2.pdb
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.Form1.resources
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.exe
+C:\Users\3Egr2\source\repos\kalkulator2\kalkulator2\obj\Debug\kalkulator2.pdb
